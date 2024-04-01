@@ -1,0 +1,259 @@
+The preparation of 10 summary statistics for use in Genomic SEM began at: 2023-05-02 12:03:29
+Please note that the files should be in the same order that they were listed for the ldsc function
+Reading in reference file
+Applying MAF filer of 0.01 to the reference file.
+All files loaded into R!
+
+
+
+Preparing summary statistics for file: ADHD_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the OR column as the effect column.
+Interpreting the INFO column as the INFO column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the SE column as the SE column.
+Interpreting the DIRECTION column as the DIRECTION column.
+3 rows were removed from the ADHD_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: ADHD_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+6774221 rows present in the full ADHD_raw.tsv summary statistics file.
+246339 rows were removed from the ADHD_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined to be coded as an odds ratio (OR) for the ADHD_raw.tsv summary statistics file based on the median of the effect column being close to 1. Please ensure the interpretation of this column as an OR is correct.
+15856rows were removed from theADHD_raw.tsvsummary statistics file due to effect values estimated at exactly 0 as this causes problems for matrix inversion necessary for later Genomic SEM analyses.
+33202rows were removed from the ADHD_raw.tsv summary statistics file due to INFO values below the designated threshold of 0.9
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:ADHD_raw.tsv
+6478824 SNPs are left in the summary statistics file ADHD_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: AN_raw.tsv
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Cannot find N column, try renaming it to N in the summary statistics file for:AN_raw.tsv
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:AN_raw.tsv
+0 rows were removed from the AN_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: AN_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full AN_raw.tsv summary statistics file.
+0 rows were removed from the AN_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the AN_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:AN_raw.tsv
+3974332 SNPs are left in the summary statistics file AN_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: ANX_raw.txt
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the Z column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the N column as the N column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:ANX_raw.txt
+331425 rows were removed from the ANX_raw.txt summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: ANX_raw.txt with the reference file: reference.1000G.maf.0.005.txt
+6683160 rows present in the full ANX_raw.txt summary statistics file.
+239890 rows were removed from the ANX_raw.txt summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the ANX_raw.txt summary statistics file based on the median of the effect column being close to 0.
+2440rows were removed from theANX_raw.txtsummary statistics file due to effect values estimated at exactly 0 as this causes problems for matrix inversion necessary for later Genomic SEM analyses.
+An transformation used to back out logistic betas for binary traits is being applied for: ANX_raw.txt
+2 row(s) were removed from theANX_raw.txt summary statistics file due to the effect allele (A1) column not matching A1 or A2 in the reference file.
+2 row(s) were removed from the ANX_raw.txt summary statistics file due to the other allele (A2) column not matching A1 or A2 in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+6440826 SNPs are left in the summary statistics file ANX_raw.txt after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: ASD_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:ASD_raw.tsv
+0 rows were removed from the ASD_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: ASD_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full ASD_raw.tsv summary statistics file.
+0 rows were removed from the ASD_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the ASD_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:ASD_raw.tsv
+3974332 SNPs are left in the summary statistics file ASD_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: BIP_raw.tsv
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Cannot find N column, try renaming it to N in the summary statistics file for:BIP_raw.tsv
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:BIP_raw.tsv
+0 rows were removed from the BIP_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: BIP_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full BIP_raw.tsv summary statistics file.
+0 rows were removed from the BIP_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the BIP_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:BIP_raw.tsv
+3974332 SNPs are left in the summary statistics file BIP_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: DLX_raw.tsv
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Cannot find N column, try renaming it to N in the summary statistics file for:DLX_raw.tsv
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:DLX_raw.tsv
+Using user provided N of 1138870 for DLX_raw.tsv . Please note that this should reflect the sum of effective sample sizes if the linprob argument is being used to back out logistic betas.
+0 rows were removed from the DLX_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: DLX_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full DLX_raw.tsv summary statistics file.
+0 rows were removed from the DLX_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the DLX_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:DLX_raw.tsv
+3974332 SNPs are left in the summary statistics file DLX_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: MDD_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:MDD_raw.tsv
+0 rows were removed from the MDD_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: MDD_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full MDD_raw.tsv summary statistics file.
+0 rows were removed from the MDD_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the MDD_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:MDD_raw.tsv
+3974332 SNPs are left in the summary statistics file MDD_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: OCD_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:OCD_raw.tsv
+0 rows were removed from the OCD_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: OCD_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full OCD_raw.tsv summary statistics file.
+0 rows were removed from the OCD_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the OCD_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:OCD_raw.tsv
+3974332 SNPs are left in the summary statistics file OCD_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: SCZ_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:SCZ_raw.tsv
+0 rows were removed from the SCZ_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: SCZ_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full SCZ_raw.tsv summary statistics file.
+0 rows were removed from the SCZ_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the SCZ_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:SCZ_raw.tsv
+3974332 SNPs are left in the summary statistics file SCZ_raw.tsv after QC and merging with the reference file.
+
+
+
+Preparing summary statistics for file: TS_raw.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Cannot find DIRECTION column, try renaming it to DIRECTION in the summary statistics file for:TS_raw.tsv
+0 rows were removed from the TS_raw.tsv summary statistics file due to entries that were duplicated across rsID, A1, and A2.
+Merging file: TS_raw.tsv with the reference file: reference.1000G.maf.0.005.txt
+3974332 rows present in the full TS_raw.tsv summary statistics file.
+0 rows were removed from the TS_raw.tsv summary statistics file as the rsIDs for these SNPs were not present in the reference file.
+The effect column was determined NOT to be coded as an odds ratio (OR) for the TS_raw.tsv summary statistics file based on the median of the effect column being close to 0.
+No INFO column, cannot filter on INFO, which may influence results
+Performing transformation under the assumption that the effect column is either an odds ratio or logistic beta (please see output above to determine whether it was interpreted as an odds ratio) and the SE column is a logistic SE (i.e., NOT the SE of the odds ratio) for:TS_raw.tsv
+3974332 SNPs are left in the summary statistics file TS_raw.tsv after QC and merging with the reference file.
+     
+After merging across all summary statistics using listwise deletion, performing QC, and merging with the reference file, there are 3959995 SNPs left in the final multivariate summary statistics file
+Sumstats finished running at 2023-05-02 12:17:25
+Running sumstats for all files took 13 minutes and 55.7094213962555 seconds
+Please check the log file ADHD_AN_ANX_ASD_BIP_DLX_MDD_OCD_SCZ_TS_sumstats.log to ensure that all columns were interpreted correctly and no warnings were issued for any of the summary statistics files.

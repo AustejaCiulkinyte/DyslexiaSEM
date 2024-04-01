@@ -1,0 +1,262 @@
+The munging of 10 summary statistics started at 2023-05-02 12:53:31
+Reading in reference file
+Reading summary statistics for ADHD_clean.tsv AN_clean.tsv ANX_clean.tsv ASD_clean.tsv BIP_clean.tsv DLX_clean.tsv MDD_clean.tsv OCD_clean.tsv SCZ_clean.tsv TS_clean.tsv. Please note that this step usually takes a few minutes due to the size of summary statistic files.
+All files loaded into R!
+
+
+
+Munging file: ADHD_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:ADHD_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full ADHD_clean.tsv summary statistics file.
+0 rows were removed from the ADHD_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file ADHD_clean.tsv after QC.
+I am done munging file: ADHD_clean.tsv
+The file is saved as ADHD.sumstats.gz in the current working directory.
+
+
+
+Munging file: AN_clean.tsv
+Found an NEFFDIV2 column for sample size. 
+
+Please note that this is likely effective sample size cut in half. The function is automatically doubling this value. This should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:AN_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full AN_clean.tsv summary statistics file.
+0 rows were removed from the AN_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file AN_clean.tsv after QC.
+I am done munging file: AN_clean.tsv
+The file is saved as AN.sumstats.gz in the current working directory.
+
+
+
+Munging file: ANX_clean.tsv
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Using provided N (248239) for file:ANX_clean.tsv
+Merging file:ANX_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full ANX_clean.tsv summary statistics file.
+0 rows were removed from the ANX_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file ANX_clean.tsv after QC.
+I am done munging file: ANX_clean.tsv
+The file is saved as ANX.sumstats.gz in the current working directory.
+
+
+
+Munging file: ASD_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:ASD_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full ASD_clean.tsv summary statistics file.
+0 rows were removed from the ASD_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file ASD_clean.tsv after QC.
+I am done munging file: ASD_clean.tsv
+The file is saved as ASD.sumstats.gz in the current working directory.
+
+
+
+Munging file: BIP_clean.tsv
+Found an NEFFDIV2 column for sample size. 
+
+Please note that this is likely effective sample size cut in half. The function is automatically doubling this value. This should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:BIP_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full BIP_clean.tsv summary statistics file.
+0 rows were removed from the BIP_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file BIP_clean.tsv after QC.
+I am done munging file: BIP_clean.tsv
+The file is saved as BIP.sumstats.gz in the current working directory.
+
+
+
+Munging file: DLX_clean.tsv
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Using provided N (1138870) for file:DLX_clean.tsv
+Merging file:DLX_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full DLX_clean.tsv summary statistics file.
+0 rows were removed from the DLX_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file DLX_clean.tsv after QC.
+I am done munging file: DLX_clean.tsv
+The file is saved as DLX.sumstats.gz in the current working directory.
+
+
+
+Munging file: MDD_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:MDD_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full MDD_clean.tsv summary statistics file.
+0 rows were removed from the MDD_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file MDD_clean.tsv after QC.
+I am done munging file: MDD_clean.tsv
+The file is saved as MDD.sumstats.gz in the current working directory.
+
+
+
+Munging file: OCD_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:OCD_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full OCD_clean.tsv summary statistics file.
+0 rows were removed from the OCD_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file OCD_clean.tsv after QC.
+I am done munging file: OCD_clean.tsv
+The file is saved as OCD.sumstats.gz in the current working directory.
+
+
+
+Munging file: SCZ_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the PVAL column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:SCZ_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full SCZ_clean.tsv summary statistics file.
+0 rows were removed from the SCZ_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file SCZ_clean.tsv after QC.
+I am done munging file: SCZ_clean.tsv
+The file is saved as SCZ.sumstats.gz in the current working directory.
+
+
+
+Munging file: TS_clean.tsv
+Found an NEFF column for sample size. 
+
+Please note that this is likely effective sample size and should only be used for liability h^2 conversion for binary traits and that it should reflect the sum of effective sample sizes across cohorts.
+
+Be aware that some NEFF columns reflect half of the effective sample size; the function will automatically double the column names if recognized [check above in .log file to determine if this is the case].
+If the Neff value is halved in the summary stats, but not recognized by the munge function, this should be manually doubled prior to running munge.
+Interpreting the SNP column as the SNP column.
+Interpreting the A1 column as the A1 column.
+Interpreting the A2 column as the A2 column.
+Interpreting the BETA column as the effect column.
+Interpreting the P column as the P column.
+Interpreting the NEFF column as the N column.
+Interpreting the MAF column as the MAF column.
+Interpreting the SE column as the SE column.
+Merging file:TS_clean.tsv with the reference file:reference.1000G.maf.0.005.txt
+3959995 rows present in the full TS_clean.tsv summary statistics file.
+0 rows were removed from the TS_clean.tsv summary statistics file as the rs-ids for these rows were not present in the reference file.
+No INFO column, cannot filter on INFO, which may influence results
+No MAF column, cannot filter on MAF, which may influence results
+3959995SNPs are left in the summary statistics file TS_clean.tsv after QC.
+I am done munging file: TS_clean.tsv
+The file is saved as TS.sumstats.gz in the current working directory.
+     
+Munging was completed at 2023-05-02 13:19:13
+The munging of all files took 25 minutes and 42.2633490562439 seconds
+Please check the .log file(s) to ensure that all columns were interpreted correctly and no warnings were issued for any of the summary statistics files

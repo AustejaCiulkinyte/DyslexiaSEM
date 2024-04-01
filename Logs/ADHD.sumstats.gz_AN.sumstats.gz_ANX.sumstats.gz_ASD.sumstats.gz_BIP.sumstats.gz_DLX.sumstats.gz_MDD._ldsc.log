@@ -1,0 +1,777 @@
+Multivariate ld-score regression of 10 traits (ADHD.sumstats.gz AN.sumstats.gz ANX.sumstats.gz ASD.sumstats.gz BIP.sumstats.gz DLX.sumstats.gz MDD.sumstats.gz OCD.sumstats.gz SCZ.sumstats.gz TS.sumstats.gz) began at: 2023-05-02 13:31:41
+Reading in LD scores
+Read in summary statistics [1/10] from: ADHD.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 103.1355; 830359 remain
+Read in summary statistics [2/10] from: AN.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 80; 830359 remain
+Read in summary statistics [3/10] from: ANX.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 248.239; 830359 remain
+Read in summary statistics [4/10] from: ASD.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 80; 830359 remain
+Read in summary statistics [5/10] from: BIP.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 101.96296; 830359 remain
+Read in summary statistics [6/10] from: DLX.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 1138.87; 830359 remain
+Read in summary statistics [7/10] from: MDD.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 447.38803902815; 830359 remain
+Read in summary statistics [8/10] from: OCD.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 80; 830359 remain
+Read in summary statistics [9/10] from: SCZ.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 40 SNPs with Chi^2 > 80; 830319 remain
+Read in summary statistics [10/10] from: TS.sumstats.gz
+Out of 3959995 SNPs, 830359 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 80; 830359 remain
+          
+Estimating heritability [1/55] for: ADHD.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait ADHD.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: ADHD.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.5221
+Lambda GC: 1.4264
+Intercept: 1.051 (0.0149)
+Ratio: 0.0976 (0.0286)
+Total Observed Scale h2: 0.2042 (0.0122)
+h2 Z: 16.7
+     
+Calculating genetic covariance [2/55] for traits: ADHD.sumstats.gz and AN.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and AN.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and AN.sumstats.gz
+Mean Z*Z: 0.1089
+Cross trait Intercept: 0.0911 (0.0096)
+Total Observed Scale Genetic Covariance (g_cov): 0.0102 (0.0099)
+g_cov Z: 1.03
+g_cov P-value: 0.30532
+     
+Calculating genetic covariance [3/55] for traits: ADHD.sumstats.gz and ANX.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and ANX.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and ANX.sumstats.gz
+Mean Z*Z: 0.1678
+Cross trait Intercept: 0.0044 (0.0092)
+Total Observed Scale Genetic Covariance (g_cov): 0.0464 (0.0044)
+g_cov Z: 10.6
+g_cov P-value: 4.022e-26
+     
+Calculating genetic covariance [4/55] for traits: ADHD.sumstats.gz and ASD.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and ASD.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and ASD.sumstats.gz
+Mean Z*Z: 0.4013
+Cross trait Intercept: 0.2763 (0.0106)
+Total Observed Scale Genetic Covariance (g_cov): 0.0873 (0.0122)
+g_cov Z: 7.15
+g_cov P-value: 8.8706e-13
+     
+Calculating genetic covariance [5/55] for traits: ADHD.sumstats.gz and BIP.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and BIP.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and BIP.sumstats.gz
+Mean Z*Z: 0.1999
+Cross trait Intercept: 0.0663 (0.0097)
+Total Observed Scale Genetic Covariance (g_cov): 0.0562 (0.0081)
+g_cov Z: 6.93
+g_cov P-value: 4.1026e-12
+     
+Calculating genetic covariance [6/55] for traits: ADHD.sumstats.gz and DLX.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and DLX.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and DLX.sumstats.gz
+Mean Z*Z: 0.2345
+Cross trait Intercept: 0.002 (0.0105)
+Total Observed Scale Genetic Covariance (g_cov): 0.0298 (0.0026)
+g_cov Z: 11.7
+g_cov P-value: 2.2576e-31
+     
+Calculating genetic covariance [7/55] for traits: ADHD.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.3707
+Cross trait Intercept: 0.0747 (0.0114)
+Total Observed Scale Genetic Covariance (g_cov): 0.0635 (0.0044)
+g_cov Z: 14.4
+g_cov P-value: 5.8744e-47
+     
+Calculating genetic covariance [8/55] for traits: ADHD.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: -0.0154
+Cross trait Intercept: 0.007 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): -0.0348 (0.0215)
+g_cov Z: -1.62
+g_cov P-value: 0.105
+     
+Calculating genetic covariance [9/55] for traits: ADHD.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging ADHD.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.1911
+Cross trait Intercept: 0.0501 (0.0117)
+Total Observed Scale Genetic Covariance (g_cov): 0.0775 (0.0119)
+g_cov Z: 6.5
+g_cov P-value: 7.77e-11
+     
+Calculating genetic covariance [10/55] for traits: ADHD.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging ADHD.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: ADHD.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0627
+Cross trait Intercept: 0.0134 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): 0.0616 (0.0164)
+g_cov Z: 3.77
+g_cov P-value: 0.00016557
+          
+Estimating heritability [11/55] for: AN.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait AN.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: AN.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.3232
+Lambda GC: 1.2778
+Intercept: 1.0301 (0.013)
+Ratio: 0.093 (0.0403)
+Total Observed Scale h2: 0.2813 (0.0215)
+h2 Z: 13.1
+     
+Calculating genetic covariance [12/55] for traits: AN.sumstats.gz and ANX.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and ANX.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and ANX.sumstats.gz
+Mean Z*Z: 0.0813
+Cross trait Intercept: -7e-04 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): 0.0349 (0.0055)
+g_cov Z: 6.32
+g_cov P-value: 2.6251e-10
+     
+Calculating genetic covariance [13/55] for traits: AN.sumstats.gz and ASD.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and ASD.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and ASD.sumstats.gz
+Mean Z*Z: 0.151
+Cross trait Intercept: 0.1289 (0.0087)
+Total Observed Scale Genetic Covariance (g_cov): 0.0223 (0.0145)
+g_cov Z: 1.54
+g_cov P-value: 0.12259
+     
+Calculating genetic covariance [14/55] for traits: AN.sumstats.gz and BIP.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and BIP.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and BIP.sumstats.gz
+Mean Z*Z: 0.1564
+Cross trait Intercept: 0.0803 (0.0097)
+Total Observed Scale Genetic Covariance (g_cov): 0.0509 (0.0104)
+g_cov Z: 4.91
+g_cov P-value: 9.1665e-07
+     
+Calculating genetic covariance [15/55] for traits: AN.sumstats.gz and DLX.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and DLX.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and DLX.sumstats.gz
+Mean Z*Z: -0.0278
+Cross trait Intercept: -0.0067 (0.0087)
+Total Observed Scale Genetic Covariance (g_cov): -0.0039 (0.0031)
+g_cov Z: -1.24
+g_cov P-value: 0.21601
+     
+Calculating genetic covariance [16/55] for traits: AN.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.1917
+Cross trait Intercept: 0.0788 (0.0094)
+Total Observed Scale Genetic Covariance (g_cov): 0.0365 (0.0053)
+g_cov Z: 6.83
+g_cov P-value: 8.6657e-12
+     
+Calculating genetic covariance [17/55] for traits: AN.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: 0.0805
+Cross trait Intercept: 0.0177 (0.0076)
+Total Observed Scale Genetic Covariance (g_cov): 0.1513 (0.0282)
+g_cov Z: 5.36
+g_cov P-value: 8.4555e-08
+     
+Calculating genetic covariance [18/55] for traits: AN.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging AN.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.1895
+Cross trait Intercept: 0.0666 (0.0123)
+Total Observed Scale Genetic Covariance (g_cov): 0.1068 (0.0175)
+g_cov Z: 6.11
+g_cov P-value: 1.001e-09
+     
+Calculating genetic covariance [19/55] for traits: AN.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging AN.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: AN.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0278
+Cross trait Intercept: 0.0022 (0.0082)
+Total Observed Scale Genetic Covariance (g_cov): 0.0426 (0.0245)
+g_cov Z: 1.74
+g_cov P-value: 0.081826
+          
+Estimating heritability [20/55] for: ANX.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait ANX.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: ANX.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.2796
+Lambda GC: 1.2362
+Intercept: 1.0115 (0.0114)
+Ratio: 0.0412 (0.0409)
+Total Observed Scale h2: 0.0482 (0.0034)
+h2 Z: 14.2
+     
+Calculating genetic covariance [21/55] for traits: ANX.sumstats.gz and ASD.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and ASD.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and ASD.sumstats.gz
+Mean Z*Z: 0.0566
+Cross trait Intercept: -4e-04 (0.008)
+Total Observed Scale Genetic Covariance (g_cov): 0.0239 (0.0058)
+g_cov Z: 4.12
+g_cov P-value: 3.8602e-05
+     
+Calculating genetic covariance [22/55] for traits: ANX.sumstats.gz and BIP.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and BIP.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and BIP.sumstats.gz
+Mean Z*Z: 0.1828
+Cross trait Intercept: 0.0155 (0.0101)
+Total Observed Scale Genetic Covariance (g_cov): 0.0473 (0.0049)
+g_cov Z: 9.61
+g_cov P-value: 7.3526e-22
+     
+Calculating genetic covariance [23/55] for traits: ANX.sumstats.gz and DLX.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and DLX.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and DLX.sumstats.gz
+Mean Z*Z: 0.0614
+Cross trait Intercept: -0.0161 (0.0094)
+Total Observed Scale Genetic Covariance (g_cov): 0.0066 (0.0014)
+g_cov Z: 4.83
+g_cov P-value: 1.3486e-06
+     
+Calculating genetic covariance [24/55] for traits: ANX.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.5154
+Cross trait Intercept: 0.1408 (0.011)
+Total Observed Scale Genetic Covariance (g_cov): 0.0509 (0.0027)
+g_cov Z: 18.7
+g_cov P-value: 6.0957e-78
+     
+Calculating genetic covariance [25/55] for traits: ANX.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: 0.0477
+Cross trait Intercept: -3e-04 (0.0073)
+Total Observed Scale Genetic Covariance (g_cov): 0.051 (0.0117)
+g_cov Z: 4.35
+g_cov P-value: 1.3522e-05
+     
+Calculating genetic covariance [26/55] for traits: ANX.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging ANX.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.2239
+Cross trait Intercept: 0.0116 (0.0118)
+Total Observed Scale Genetic Covariance (g_cov): 0.0782 (0.0083)
+g_cov Z: 9.39
+g_cov P-value: 5.7989e-21
+     
+Calculating genetic covariance [27/55] for traits: ANX.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging ANX.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: ANX.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0481
+Cross trait Intercept: 3e-04 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): 0.0389 (0.0103)
+g_cov Z: 3.77
+g_cov P-value: 0.00016045
+          
+Estimating heritability [28/55] for: ASD.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait ASD.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: ASD.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.2176
+Lambda GC: 1.1925
+Intercept: 1.0063 (0.0117)
+Ratio: 0.0288 (0.0539)
+Total Observed Scale h2: 0.2233 (0.0199)
+h2 Z: 11.2
+     
+Calculating genetic covariance [29/55] for traits: ASD.sumstats.gz and BIP.sumstats.gz
+830359 SNPs remain after merging ASD.sumstats.gz and BIP.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and BIP.sumstats.gz
+Mean Z*Z: 0.1126
+Cross trait Intercept: 0.0409 (0.0091)
+Total Observed Scale Genetic Covariance (g_cov): 0.0517 (0.0116)
+g_cov Z: 4.45
+g_cov P-value: 8.7255e-06
+     
+Calculating genetic covariance [30/55] for traits: ASD.sumstats.gz and DLX.sumstats.gz
+830359 SNPs remain after merging ASD.sumstats.gz and DLX.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and DLX.sumstats.gz
+Mean Z*Z: 0.0401
+Cross trait Intercept: 0.0156 (0.0095)
+Total Observed Scale Genetic Covariance (g_cov): 0.006 (0.0034)
+g_cov Z: 1.74
+g_cov P-value: 0.081972
+     
+Calculating genetic covariance [31/55] for traits: ASD.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging ASD.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.1988
+Cross trait Intercept: 0.0657 (0.0091)
+Total Observed Scale Genetic Covariance (g_cov): 0.0434 (0.005)
+g_cov Z: 8.69
+g_cov P-value: 3.5597e-18
+     
+Calculating genetic covariance [32/55] for traits: ASD.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging ASD.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: 0.0136
+Cross trait Intercept: -0.0034 (0.0079)
+Total Observed Scale Genetic Covariance (g_cov): 0.0455 (0.0301)
+g_cov Z: 1.51
+g_cov P-value: 0.13048
+     
+Calculating genetic covariance [33/55] for traits: ASD.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging ASD.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.1472
+Cross trait Intercept: 0.0296 (0.0109)
+Total Observed Scale Genetic Covariance (g_cov): 0.1046 (0.0174)
+g_cov Z: 6.02
+g_cov P-value: 1.798e-09
+     
+Calculating genetic covariance [34/55] for traits: ASD.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging ASD.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: ASD.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0277
+Cross trait Intercept: 0.0055 (0.007)
+Total Observed Scale Genetic Covariance (g_cov): 0.047 (0.0206)
+g_cov Z: 2.29
+g_cov P-value: 0.022143
+          
+Estimating heritability [35/55] for: BIP.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait BIP.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: BIP.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.6928
+Lambda GC: 1.536
+Intercept: 1.0492 (0.016)
+Ratio: 0.071 (0.023)
+Total Observed Scale h2: 0.2813 (0.0133)
+h2 Z: 21.2
+     
+Calculating genetic covariance [36/55] for traits: BIP.sumstats.gz and DLX.sumstats.gz
+830359 SNPs remain after merging BIP.sumstats.gz and DLX.sumstats.gz summary statistics
+Results for genetic covariance between: BIP.sumstats.gz and DLX.sumstats.gz
+Mean Z*Z: 0.0623
+Cross trait Intercept: -0.0184 (0.011)
+Total Observed Scale Genetic Covariance (g_cov): 0.01 (0.0028)
+g_cov Z: 3.57
+g_cov P-value: 0.00035428
+     
+Calculating genetic covariance [37/55] for traits: BIP.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging BIP.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: BIP.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.3689
+Cross trait Intercept: 0.0744 (0.0121)
+Total Observed Scale Genetic Covariance (g_cov): 0.0632 (0.0051)
+g_cov Z: 12.5
+g_cov P-value: 9.98e-36
+     
+Calculating genetic covariance [38/55] for traits: BIP.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging BIP.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: BIP.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: 0.0992
+Cross trait Intercept: 0.0283 (0.0082)
+Total Observed Scale Genetic Covariance (g_cov): 0.1195 (0.0225)
+g_cov Z: 5.32
+g_cov P-value: 1.056e-07
+     
+Calculating genetic covariance [39/55] for traits: BIP.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging BIP.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: BIP.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.7938
+Cross trait Intercept: 0.2168 (0.0141)
+Total Observed Scale Genetic Covariance (g_cov): 0.3291 (0.0159)
+g_cov Z: 20.7
+g_cov P-value: 9.1377e-95
+     
+Calculating genetic covariance [40/55] for traits: BIP.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging BIP.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: BIP.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.061
+Cross trait Intercept: 0.0319 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): 0.0362 (0.0179)
+g_cov Z: 2.03
+g_cov P-value: 0.042694
+          
+Estimating heritability [41/55] for: DLX.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait DLX.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: DLX.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.574
+Lambda GC: 1.398
+Intercept: 0.8573 (0.0171)
+Ratio: -0.2487 (0.0298)
+Total Observed Scale h2: 0.0272 (0.0014)
+h2 Z: 20
+     
+Calculating genetic covariance [42/55] for traits: DLX.sumstats.gz and MDD.sumstats.gz
+830359 SNPs remain after merging DLX.sumstats.gz and MDD.sumstats.gz summary statistics
+Results for genetic covariance between: DLX.sumstats.gz and MDD.sumstats.gz
+Mean Z*Z: 0.0892
+Cross trait Intercept: -0.0125 (0.0096)
+Total Observed Scale Genetic Covariance (g_cov): 0.0064 (0.0012)
+g_cov Z: 5.21
+g_cov P-value: 1.8485e-07
+     
+Calculating genetic covariance [43/55] for traits: DLX.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging DLX.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: DLX.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: -0.033
+Cross trait Intercept: -0.0046 (0.0084)
+Total Observed Scale Genetic Covariance (g_cov): -0.014 (0.0066)
+g_cov Z: -2.14
+g_cov P-value: 0.032678
+     
+Calculating genetic covariance [44/55] for traits: DLX.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging DLX.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: DLX.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.0531
+Cross trait Intercept: -0.016 (0.0128)
+Total Observed Scale Genetic Covariance (g_cov): 0.0118 (0.0042)
+g_cov Z: 2.82
+g_cov P-value: 0.0047436
+     
+Calculating genetic covariance [45/55] for traits: DLX.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging DLX.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: DLX.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: -0.0142
+Cross trait Intercept: -0.0044 (0.0082)
+Total Observed Scale Genetic Covariance (g_cov): -0.002 (0.0055)
+g_cov Z: -0.368
+g_cov P-value: 0.71256
+          
+Estimating heritability [46/55] for: MDD.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait MDD.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: MDD.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.7086
+Lambda GC: 1.5609
+Intercept: 1.0029 (0.0178)
+Ratio: 0.0041 (0.0251)
+Total Observed Scale h2: 0.0731 (0.0038)
+h2 Z: 19
+     
+Calculating genetic covariance [47/55] for traits: MDD.sumstats.gz and OCD.sumstats.gz
+830359 SNPs remain after merging MDD.sumstats.gz and OCD.sumstats.gz summary statistics
+Results for genetic covariance between: MDD.sumstats.gz and OCD.sumstats.gz
+Mean Z*Z: 0.0645
+Cross trait Intercept: 0.0015 (0.0084)
+Total Observed Scale Genetic Covariance (g_cov): 0.052 (0.011)
+g_cov Z: 4.74
+g_cov P-value: 2.1297e-06
+     
+Calculating genetic covariance [48/55] for traits: MDD.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging MDD.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: MDD.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.3437
+Cross trait Intercept: 0.0616 (0.0134)
+Total Observed Scale Genetic Covariance (g_cov): 0.0801 (0.008)
+g_cov Z: 9.97
+g_cov P-value: 2.0604e-23
+     
+Calculating genetic covariance [49/55] for traits: MDD.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging MDD.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: MDD.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0692
+Cross trait Intercept: 0.0065 (0.0088)
+Total Observed Scale Genetic Covariance (g_cov): 0.0388 (0.0084)
+g_cov Z: 4.62
+g_cov P-value: 3.7767e-06
+          
+Estimating heritability [50/55] for: OCD.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait OCD.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: OCD.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.065
+Lambda GC: 1.0576
+Intercept: 0.989 (0.0093)
+Ratio: -0.1695 (0.1436)
+Total Observed Scale h2: 0.464 (0.079)
+h2 Z: 5.88
+     
+Calculating genetic covariance [51/55] for traits: OCD.sumstats.gz and SCZ.sumstats.gz
+830319 SNPs remain after merging OCD.sumstats.gz and SCZ.sumstats.gz summary statistics
+Results for genetic covariance between: OCD.sumstats.gz and SCZ.sumstats.gz
+Mean Z*Z: 0.1192
+Cross trait Intercept: 0.036 (0.0102)
+Total Observed Scale Genetic Covariance (g_cov): 0.1812 (0.0379)
+g_cov Z: 4.78
+g_cov P-value: 1.7591e-06
+     
+Calculating genetic covariance [52/55] for traits: OCD.sumstats.gz and TS.sumstats.gz
+830359 SNPs remain after merging OCD.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: OCD.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.1352
+Cross trait Intercept: 0.1022 (0.007)
+Total Observed Scale Genetic Covariance (g_cov): 0.159 (0.0466)
+g_cov Z: 3.41
+g_cov P-value: 0.00064984
+          
+Estimating heritability [53/55] for: SCZ.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait SCZ.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: SCZ.sumstats.gz
+Mean Chi^2 across remaining SNPs: 2.1931
+Lambda GC: 1.893
+Intercept: 1.0943 (0.0223)
+Ratio: 0.079 (0.0187)
+Total Observed Scale h2: 0.8143 (0.0343)
+h2 Z: 23.8
+     
+Calculating genetic covariance [54/55] for traits: SCZ.sumstats.gz and TS.sumstats.gz
+830319 SNPs remain after merging SCZ.sumstats.gz and TS.sumstats.gz summary statistics
+Results for genetic covariance between: SCZ.sumstats.gz and TS.sumstats.gz
+Mean Z*Z: 0.0504
+Cross trait Intercept: 0.0147 (0.0102)
+Total Observed Scale Genetic Covariance (g_cov): 0.0568 (0.0263)
+g_cov Z: 2.16
+g_cov P-value: 0.030888
+          
+Estimating heritability [55/55] for: TS.sumstats.gz
+     
+Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait TS.sumstats.gz when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+     
+Heritability Results for trait: TS.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.1321
+Lambda GC: 1.1278
+Intercept: 1.0105 (0.0105)
+Ratio: 0.0794 (0.0791)
+Total Observed Scale h2: 0.4424 (0.0548)
+h2 Z: 8.07
+     
+      
+Liability Scale Results
+     
+Liability scale results for: ADHD
+Total Liability Scale h2: 0.1733 (0.0104)
+Total Liability Scale Genetic Covariance between ADHD and AN: 0.007 (0.0068)
+     
+Total Liability Scale Genetic Covariance between ADHD and ANX: 0.0438 (0.0041)
+     
+Total Liability Scale Genetic Covariance between ADHD and ASD: 0.061 (0.0085)
+     
+Total Liability Scale Genetic Covariance between ADHD and BIP: 0.0419 (0.006)
+     
+Total Liability Scale Genetic Covariance between ADHD and DLX: 0.0679 (0.0058)
+     
+Total Liability Scale Genetic Covariance between ADHD and MDD: 0.0707 (0.0049)
+     
+Total Liability Scale Genetic Covariance between ADHD and OCD: -0.0267 (0.0165)
+     
+Total Liability Scale Genetic Covariance between ADHD and SCZ: 0.053 (0.0081)
+     
+Total Liability Scale Genetic Covariance between ADHD and TS: 0.0411 (0.0109)
+     
+     
+Liability scale results for: AN
+Total Liability Scale h2: 0.1552 (0.0119)
+Total Liability Scale Genetic Covariance between AN and ANX: 0.0266 (0.0042)
+     
+Total Liability Scale Genetic Covariance between AN and ASD: 0.0126 (0.0082)
+     
+Total Liability Scale Genetic Covariance between AN and BIP: 0.0306 (0.0062)
+     
+Total Liability Scale Genetic Covariance between AN and DLX: -0.0071 (0.0057)
+     
+Total Liability Scale Genetic Covariance between AN and MDD: 0.0328 (0.0048)
+     
+Total Liability Scale Genetic Covariance between AN and OCD: 0.0937 (0.0175)
+     
+Total Liability Scale Genetic Covariance between AN and SCZ: 0.0589 (0.0096)
+     
+Total Liability Scale Genetic Covariance between AN and TS: 0.0229 (0.0132)
+     
+     
+Liability scale results for: ANX
+Total Liability Scale h2: 0.0507 (0.0036)
+Total Liability Scale Genetic Covariance between ANX and ASD: 0.0186 (0.0045)
+     
+Total Liability Scale Genetic Covariance between ANX and BIP: 0.0393 (0.0041)
+     
+Total Liability Scale Genetic Covariance between ANX and DLX: 0.0168 (0.0035)
+     
+Total Liability Scale Genetic Covariance between ANX and MDD: 0.0631 (0.0034)
+     
+Total Liability Scale Genetic Covariance between ANX and OCD: 0.0436 (0.01)
+     
+Total Liability Scale Genetic Covariance between ANX and SCZ: 0.0596 (0.0063)
+     
+Total Liability Scale Genetic Covariance between ANX and TS: 0.0289 (0.0077)
+     
+     
+Liability scale results for: ASD
+Total Liability Scale h2: 0.1287 (0.0115)
+Total Liability Scale Genetic Covariance between ASD and BIP: 0.0317 (0.0071)
+     
+Total Liability Scale Genetic Covariance between ASD and DLX: 0.0112 (0.0064)
+     
+Total Liability Scale Genetic Covariance between ASD and MDD: 0.0398 (0.0046)
+     
+Total Liability Scale Genetic Covariance between ASD and OCD: 0.0288 (0.019)
+     
+Total Liability Scale Genetic Covariance between ASD and SCZ: 0.059 (0.0098)
+     
+Total Liability Scale Genetic Covariance between ASD and TS: 0.0259 (0.0113)
+     
+     
+Liability scale results for: BIP
+Total Liability Scale h2: 0.1844 (0.0087)
+Total Liability Scale Genetic Covariance between BIP and DLX: 0.02 (0.0056)
+     
+Total Liability Scale Genetic Covariance between BIP and MDD: 0.0619 (0.005)
+     
+Total Liability Scale Genetic Covariance between BIP and OCD: 0.0807 (0.0152)
+     
+Total Liability Scale Genetic Covariance between BIP and SCZ: 0.198 (0.0096)
+     
+Total Liability Scale Genetic Covariance between BIP and TS: 0.0212 (0.0105)
+     
+     
+Liability scale results for: DLX
+Total Liability Scale h2: 0.1666 (0.0083)
+Total Liability Scale Genetic Covariance between DLX and MDD: 0.0192 (0.0037)
+     
+Total Liability Scale Genetic Covariance between DLX and OCD: -0.0289 (0.0135)
+     
+Total Liability Scale Genetic Covariance between DLX and SCZ: 0.0217 (0.0077)
+     
+Total Liability Scale Genetic Covariance between DLX and TS: -0.0036 (0.0098)
+     
+     
+Liability scale results for: MDD
+Total Liability Scale h2: 0.1068 (0.0056)
+Total Liability Scale Genetic Covariance between MDD and OCD: 0.0524 (0.0111)
+     
+Total Liability Scale Genetic Covariance between MDD and SCZ: 0.0719 (0.0072)
+     
+Total Liability Scale Genetic Covariance between MDD and TS: 0.0339 (0.0073)
+     
+     
+Liability scale results for: OCD
+Total Liability Scale h2: 0.3228 (0.0549)
+Total Liability Scale Genetic Covariance between OCD and SCZ: 0.1123 (0.0235)
+     
+Total Liability Scale Genetic Covariance between OCD and TS: 0.096 (0.0282)
+     
+     
+Liability scale results for: SCZ
+Total Liability Scale h2: 0.4494 (0.0189)
+Total Liability Scale Genetic Covariance between SCZ and TS: 0.0305 (0.0141)
+     
+     
+Liability scale results for: TS
+Total Liability Scale h2: 0.2319 (0.0287)
+     
+      
+Genetic Correlation Results
+Genetic Correlation between ADHD and AN: 0.0424 (0.0414)
+     
+Genetic Correlation between ADHD and ANX: 0.4676 (0.0442)
+     
+Genetic Correlation between ADHD and ASD: 0.4087 (0.0572)
+     
+Genetic Correlation between ADHD and BIP: 0.2344 (0.0338)
+     
+Genetic Correlation between ADHD and DLX: 0.3997 (0.0343)
+     
+Genetic Correlation between ADHD and MDD: 0.5195 (0.0361)
+     
+Genetic Correlation between ADHD and OCD: -0.1131 (0.0698)
+     
+Genetic Correlation between ADHD and SCZ: 0.19 (0.0292)
+     
+Genetic Correlation between ADHD and TS: 0.2051 (0.0544)
+     
+Genetic Correlation between AN and ANX: 0.3 (0.0475)
+     
+Genetic Correlation between AN and ASD: 0.0891 (0.0577)
+     
+Genetic Correlation between AN and BIP: 0.1809 (0.0369)
+     
+Genetic Correlation between AN and DLX: -0.0441 (0.0357)
+     
+Genetic Correlation between AN and MDD: 0.2547 (0.0373)
+     
+Genetic Correlation between AN and OCD: 0.4187 (0.0782)
+     
+Genetic Correlation between AN and SCZ: 0.2231 (0.0365)
+     
+Genetic Correlation between AN and TS: 0.1209 (0.0695)
+     
+Genetic Correlation between ANX and ASD: 0.2308 (0.0561)
+     
+Genetic Correlation between ANX and BIP: 0.4068 (0.0423)
+     
+Genetic Correlation between ANX and DLX: 0.1828 (0.0378)
+     
+Genetic Correlation between ANX and MDD: 0.8574 (0.0459)
+     
+Genetic Correlation between ANX and OCD: 0.3409 (0.0783)
+     
+Genetic Correlation between ANX and SCZ: 0.3948 (0.042)
+     
+Genetic Correlation between ANX and TS: 0.2666 (0.0706)
+     
+Genetic Correlation between ASD and BIP: 0.2061 (0.0463)
+     
+Genetic Correlation between ASD and DLX: 0.0765 (0.044)
+     
+Genetic Correlation between ASD and MDD: 0.3398 (0.0391)
+     
+Genetic Correlation between ASD and OCD: 0.1413 (0.0934)
+     
+Genetic Correlation between ASD and SCZ: 0.2453 (0.0408)
+     
+Genetic Correlation between ASD and TS: 0.1497 (0.0654)
+     
+Genetic Correlation between BIP and DLX: 0.114 (0.0319)
+     
+Genetic Correlation between BIP and MDD: 0.441 (0.0353)
+     
+Genetic Correlation between BIP and OCD: 0.3308 (0.0622)
+     
+Genetic Correlation between BIP and SCZ: 0.6878 (0.0333)
+     
+Genetic Correlation between BIP and TS: 0.1026 (0.0506)
+     
+Genetic Correlation between DLX and MDD: 0.1437 (0.0276)
+     
+Genetic Correlation between DLX and OCD: -0.1248 (0.0584)
+     
+Genetic Correlation between DLX and SCZ: 0.0792 (0.0281)
+     
+Genetic Correlation between DLX and TS: -0.0184 (0.0498)
+     
+Genetic Correlation between MDD and OCD: 0.2822 (0.0595)
+     
+Genetic Correlation between MDD and SCZ: 0.3282 (0.0329)
+     
+Genetic Correlation between MDD and TS: 0.2156 (0.0466)
+     
+Genetic Correlation between OCD and SCZ: 0.2948 (0.0617)
+     
+Genetic Correlation between OCD and TS: 0.351 (0.1029)
+     
+Genetic Correlation between SCZ and TS: 0.0946 (0.0438)
+     
+     
+LDSC finished running at 2023-05-02 13:35:39
+Running LDSC for all files took 3 minutes and 58 seconds
+     
