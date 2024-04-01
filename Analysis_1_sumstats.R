@@ -1,7 +1,7 @@
 library(data.table)
 library(GenomicSEM)
 
-#create vector of the summary statistics files
+#create vector of clean summary statistics files
 files <- c("ADHD_raw.tsv",
            "AN_raw.tsv",
            "ANX_raw.txt",
@@ -14,11 +14,12 @@ files <- c("ADHD_raw.tsv",
            "TS_raw.tsv"
            )
 
-#define the reference file being used to allign alleles across summary stats
+#define the reference file being used to align alleles across summary stats
 #here we are using 1000 genomes
 ref <- "reference.1000G.maf.0.005.txt"
 
-# name the traits
+# name the traits. Note that these names were updated later - in the paper, 
+# we replaced "ASD" with "AUT" and "DLX" with "DYX".
 trait.names <- c("ADHD", "AN", "ANX", "ASD", "BIP",
                  "DLX", "MDD", "OCD", "SCZ", "TS")
 
@@ -60,15 +61,15 @@ sumstats<-sumstats(files=files,ref=ref,trait.names=trait.names,se.logit=se.logit
 
 save(sumstats, file="sumstats.RData")
 
+##############################################
 
 #extract formatted lists of SNPs, betas and SEs
 #read in raw files and add back Neff column
+#this is needed for PolarMorphism later
 
-
-
-library(data.table)
 library(dplyr)
 
+# name output files
 output_files <- c("ADHD_clean.tsv",
                   "AN_clean.tsv",
                   "ANX_clean.tsv",
