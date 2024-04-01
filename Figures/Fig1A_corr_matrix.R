@@ -3,7 +3,7 @@ library(corrplot)
 library(RColorBrewer)
 
 # Modified corrplot function from the corrplot package. The purpose of this is
-# to be able to scale circle radii based on p-value, not rg
+# to be able to scale circle radii based on p-value, not rg. End of function is on line 834 
 corrplot2 = function(corr,
                     method = c('circle', 'square', 'ellipse', 'number', 'shade', 'color', 'pie'),
                     type = c('full', 'lower', 'upper'), col = NULL, col.lim = NULL, is.corr = TRUE,
@@ -833,7 +833,7 @@ draw_grid = function(coords, fg) {
 
 #### end of function
 
-# read in files containing correlations and p-values
+# read in files containing correlations and p-values. These are available in Supplementary Table 2
 correlations<-read.csv("correlations_full.csv", row.names = 1)
 pvalues<-read.csv("pval_full.csv", row.names=1)
 
@@ -859,7 +859,7 @@ pval_plot[pval_plot<0.0001/55] <- 0.9
 # array to be used in plotting the matrix
 pt.cex=c(0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9)
 
-# draw a correlation matrix and save as .png
+# draw a correlation matrix and save as .pdf
 pdf(file="corrplot.pdf")
 
 corrplot2(correlations,  col = COL2('PuOr', 200), type="lower",
@@ -881,7 +881,7 @@ colnames(legend.p) <- c("P values")
 rownames(legend.p) <- c("> 0.75", "< 0.75", "< 0.5", "< 0.25",
                       "< 0.1", "< 0.05", "< 0.01", "< 0.001", "< 0.0001")
 
-# draw a legend and save as .png
+# draw a legend and save as .pdf
 
 pdf(file="legend.pdf")
 
