@@ -65,7 +65,9 @@ save(sumstats, file="sumstats.RData")
 
 #extract formatted lists of SNPs, betas and SEs
 #read in raw files and add back Neff column
-#this is needed for PolarMorphism later
+#this is needed for munge and PolarMorphism later. 
+#the munge function does not perform all the alignments that sumstats does, 
+#therefore we run sumstats first
 
 library(dplyr)
 
