@@ -1,10 +1,5 @@
 library(GenomicSEM)
 
-load(LDSCoutput.RData)
-
-?userGWAS
-
-
 #vector of munged summary statisitcs
 traits<-c("ADHD.sumstats.gz", 
           "AN.sumstats.gz", 
