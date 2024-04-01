@@ -6,9 +6,9 @@ library(stringr)
 library(VennDiagram)
 
 # read files
-ADHD.loci <- fread("ADHD_signif_SNPs.csv") # Loci associated with ADHD
-DLX.loci <- fread("DLX_signif_SNPs.csv") # Loci associated with DLX
-double.loci <- fread("GenomicRiskLoci.txt") # loci associated with both ADHD and DLX
+ADHD.loci <- fread("ADHD_signif_SNPs.csv") # Loci associated with ADHD - from ADHD GWAS paper
+DLX.loci <- fread("DLX_signif_SNPs.csv") # Loci associated with DLX - from DLX GWAS paper
+double.loci <- fread("GenomicRiskLoci.txt") # loci associated with both ADHD and DLX - from FUMA
 
 ### clean up files
 DLX.loci$CHR <- as.integer(str_extract(DLX.loci$Cytoband, "[0-9]+")) # get chromosome number
@@ -21,7 +21,6 @@ colnames(DLX.loci)[2] <- "BP" # rename column
 colnames(double.loci)[3:5] <- c("SNP", "CHR", "BP") # rename columns
 
 # define function to find number of loci in df1 that are within start-end positions of df2
-
 countInRange = function(df1, df2){
   count=0
   for(i in 1:nrow(df2)){
@@ -91,7 +90,7 @@ ADHD.DLX.loci <- returnInRange(ADHD.loci, DLX.loci)
 
 
 ###############################################################################
-## The following code formats lists of loci (original and derived by PolarMorphism)
+## The following code formats lists of loci (from papers and derived by PolarMorphism)
 ## such that they can be read by the draw.venn command later.
 ## If this code is run, you MUST reread the original loci files back into R
 ## before running any further analysis.
@@ -137,7 +136,7 @@ for(i in 1:length(DLX.loci$SNP)){
 ###############################################################################
 
 
-# draw a Venn diagram and save as .svg
+# draw a Venn diagram and save as .pdf
 draw.venn(ADHD.loci$SNP, DLX.loci$SNP, double.loci$match,
           title="", subtitle="", 
           xtitle="ADHD risk loci", xt_f="sans", xt_fb=1, xt_s=3,
