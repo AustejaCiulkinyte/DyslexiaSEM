@@ -11,7 +11,7 @@ load("LDSCoutput.RData")
 attributes(LDSCoutput[["S"]])$dimnames[[2]][4] <- "AUT"
 attributes(LDSCoutput[["S_Stand"]])$dimnames[[2]][4] <- "AUT"
 attributes(LDSCoutput[["S"]])$dimnames[[2]][6] <- "DYX"
-attributes(LDSCoutput[["S_Stand"]])$dimnames[[2]][6] <- "DyX"
+attributes(LDSCoutput[["S_Stand"]])$dimnames[[2]][6] <- "DYX"
 
 
 #defines the function to convert GenomicSEM output into an output readable by 
@@ -101,7 +101,7 @@ ThreeFactor$results<-noF1F3
 # convert gSEM output to a format readable by the plotting function
 formatted_model <- semPlotModel_GSEM(ThreeFactor)
 
-#run semPaths to draw a diagram and save it as .png
+#run semPaths to draw a diagram and save it as .pdf
 semPaths(formatted_model,
          layout="tree2",
          whatLabels="label",
@@ -143,7 +143,7 @@ CFAofEFA$modelfit
 #       chisq df      p_chisq      AIC       CFI       SRMR
 # df 172.5952 29 2.326762e-22 224.5952 0.9681415 0.06195346
 
-#remove aberrant correlation line
+#remove aberrant correlation lines
 results<-CFAofEFA$results
 results$formula <- paste(results$lhs,results$op, results$rhs)
 unwanted <- c("F1 ~~ F2")
@@ -180,7 +180,7 @@ semPaths_plot<-semPaths(formatted_model,
          
 )
 
-# save the model as a .png. Saving the model as a variable first allows me to
+# save the model as a .pdf. Saving the model as a variable first allows me to
 # apply the rotate_resid() function from the semptools package. This function
 # rotates factor residual arrows  to prevent overlapping with factor correlation
 # arrows
@@ -216,7 +216,7 @@ FiveFactor$modelfit
 #       chisq df      p_chisq      AIC       CFI       SRMR
 # df 96.56931 24 1.148296e-10 158.5693 0.9838995 0.04777765
 
-#remove aberrant correlation line
+#remove aberrant correlation lines
 results<-FiveFactor$results
 results$formula <- paste(results$lhs,results$op, results$rhs)
 unwanted <- c("F1 ~~ F2")
@@ -252,68 +252,8 @@ semPaths_plot<-semPaths(formatted_model,
          #filename="path_diagram_5F.png"
 )
 
-#save model as .png
+#save model as .pdf
 pdf(file="5fact.pdf", width=5, height = 3)
-
-plot(rotate_resid(semPaths_plot, rotate_resid_list = c(F1=225,F2=225,F3=225,F4=225,F5=225)))
-
-dev.off()
-
-# Six factor model: syntax
-SixModel <- 'F1 =~ OCD + AN + TS
-F2 =~ BIP + SCZ
-F3 =~ ANX + MDD
-F4 =~ ADHD + AUT
-F5 =~ ADHD + DYX
-F6 =~ AUT + DYX
-F1 ~~ F3
-F1 ~~ F4
-F1 ~~ F5
-F2 ~~ F3
-F2 ~~ F4
-F2 ~~ F5
-F3 ~~ F4
-F3 ~~ F5
-F4 ~~ F5
-'
-
-#get structural model
-SixFactor<-usermodel(LDSCoutput, estimation = "DWLS", model = SixModel, std.lv=TRUE)
-
-#get model fit statistics
-SixFactor$modelfit
-
-#convert gsem output to format readable by semPaths
-formatted_model <- semPlotModel_GSEM(SixFactor)
-
-# save model as a variable
-semPaths_plot<-semPaths(formatted_model,
-                        layout="tree2",
-                        whatLabels="label",
-                        style="ram",
-                        curvature=5,
-                        edge.label.cex=0.8,
-                        reorder = TRUE,
-                        sizeMan=8,
-                        sizeLat=10,
-                        nCharNodes=4,
-                        nCharEdges=0,
-                        label.norm="OOOO",
-                        optimizeLatRes = TRUE,
-                        optimPoints = 0.4,
-                        fixedStyle = c("black",1),
-                        freeStyle = c("black",1),
-                        width=45,
-                        height=25,
-                        levels=c(1,2,6,7),
-                        mar=c(10,2,15,1),
-                        edge.label.position=0.5
-                        #filetype="png",
-                        #filename="path_diagram_5F.png"
-)
-
-#save model as .png
-png(filename="6fact.png", width=4500, height=3000, res=300)
 
 plot(rotate_resid(semPaths_plot, rotate_resid_list = c(F1=225,F2=225,F3=225,F4=225,F5=225)))
 
