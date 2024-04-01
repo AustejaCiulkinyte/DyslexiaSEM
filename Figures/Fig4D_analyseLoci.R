@@ -8,7 +8,7 @@ library(VennDiagram)
 # read files
 ADHD.loci <- fread("ADHD_signif_SNPs.csv") # Loci associated with ADHD - from ADHD GWAS paper
 DLX.loci <- fread("DLX_signif_SNPs.csv") # Loci associated with DLX - from DLX GWAS paper
-double.loci <- fread("GenomicRiskLoci.txt") # loci associated with both ADHD and DLX - from FUMA
+double.loci <- fread("GenomicRiskLoci.txt") # loci associated with both ADHD and DLX - from FUMA (Supp. Table 4)
 
 ### clean up files
 DLX.loci$CHR <- as.integer(str_extract(DLX.loci$Cytoband, "[0-9]+")) # get chromosome number
