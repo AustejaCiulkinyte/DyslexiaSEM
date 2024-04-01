@@ -89,7 +89,13 @@ A complete output is provided as ` EFA_output.xlsx `.
 
 See ` Analysis_5_gSEM.R ` .
 
-### 2.6. PolarMorphism
+### 2.6. userGWAS
+
+This function was used to extract summary statistics describing Factor 5 (Attention and learning difficulties latent factor).
+
+See ` Analysis_6_userGWAS.R ` .
+
+### 2.7. PolarMorphism
 
 See ` Analysis_6_polarMorphism.R ` .
 
