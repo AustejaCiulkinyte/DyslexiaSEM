@@ -13,7 +13,7 @@ files<-c("ADHD_clean.tsv",
          "TS_clean.tsv"
 )
 
-#define the reference file being used to align alleles across summary stats
+#define the reference file being used to align aleles across summary stats
 #here we are using 1000 genomes
 ref<-"reference.1000G.maf.0.005.txt"
 
