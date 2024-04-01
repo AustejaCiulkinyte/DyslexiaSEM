@@ -8,9 +8,9 @@ library(BiocManager)
 
 
 # read files
-ADHD.genes <- fread("ADHD_signif_genes.csv") # Genes associated with ADHD
-DLX.genes <- fread("DLX_signif_genes.csv") # Genes associated with DLX
-double.genes <- fread("genes.txt") # genes associated with both ADHD and DLX
+ADHD.genes <- fread("ADHD_signif_genes.csv") # Genes associated with ADHD - from ADHD GWAS paper
+DLX.genes <- fread("DLX_signif_genes.csv") # Genes associated with DLX - from DLX GWAS paper
+double.genes <- fread("genes.txt") # genes associated with both ADHD and DLX - from FUMA (Supp. Table 5)
 
 # clean up files
 #colnames(ADHD.genes)[5] <- "symbol" # rename column
@@ -46,7 +46,7 @@ double_shared_genes <- intersect(ADHD_shared_genes, DLX_shared_genes)
 print(double_shared_genes)
 
 
-# draw a Venn diagram and save as .svg
+# draw a Venn diagram and save as .pdf
 draw.venn(ADHD.genes$symbol, DLX.genes$symbol, double.genes$symbol,
           title="", subtitle="", 
           xtitle="ADHD mapped genes", xt_f="sans", xt_fb=1, xt_s=3,
