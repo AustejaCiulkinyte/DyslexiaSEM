@@ -9,6 +9,8 @@ library(ggrepel)
 library(ggnetwork)
 
 # read in a matrix of rg values that were significant (padj < 0.05)
+# this is a modified version of the correlation table in Supplementary Table 2, except all correlations where
+# padj > 0.05 are set to NA
 SM<-as.matrix(read.table("matrix_p05_rg30.csv", header=TRUE, row.names=1, sep=","))
 
 # duplicate the matrix
@@ -32,7 +34,7 @@ colours<-colorRamp(c("grey80", "darkslateblue"))
 
 # plot the network graph
 # the graph is generated anew each time the code is run. It is possible to run this
-# chunk of code multiple times until a nice graph is generated
+# chunk of code multiple times until a suitable graph is generated
 net=g
 plot<-ggnet2(net,
        size=10,
@@ -51,5 +53,5 @@ plot<-ggnet2(net,
 
 plot
 
-# save as .png
+# save as .pdf
 ggsave("netpath.pdf", plot)
