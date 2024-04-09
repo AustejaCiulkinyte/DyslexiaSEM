@@ -65,13 +65,9 @@ Following QC, we ran ld-score regression using the _ldsc_ function in the Genomi
 
 ` Analysis_3_ldsc.R ` 
 
-the log file
+and the log file
 
 ` ADHD.sumstats.gz_AN.sumstats.gz_ANX.sumstats.gz_ASD.sumstats.gz_BIP.sumstats.gz_DLX.sumstats.gz_MDD._ldsc.txt `
-
-and the output
-
-` LDSCoutput.RData `
 
 relevant to this study.
 
