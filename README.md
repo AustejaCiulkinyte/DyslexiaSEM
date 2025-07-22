@@ -1,5 +1,6 @@
 ## 1. Data availability
-This repository relates to Ciulkinyte et al. (2023) "Genetic neurodevelopmental clustering and dyslexia", preprint available at https://doi.org/10.1101/2023.10.04.23296530.
+This repository relates to Ciulkinyte, A., Mountford, H.S., Fontanillas, P. et al. Genetic neurodevelopmental clustering and dyslexia. Mol Psychiatry 30, 140–150 (2025). 
+https://doi.org/10.1038/s41380-024-02649-8
 
 All data are publicly available, with the exception of anxiety and dyslexia GWAS. Links to public repositories are below:
 
